@@ -10,7 +10,7 @@ int main(void) {
 
     printf("Enter a message: ");
 
-    while ((c = toupper(getchar())) != '\n' & p < message + MAX_LEN) {
+    while ((c = toupper(getchar())) != '\n' && p < message + MAX_LEN) {
         if (isalpha(c))
             *p++ = c;
     }
